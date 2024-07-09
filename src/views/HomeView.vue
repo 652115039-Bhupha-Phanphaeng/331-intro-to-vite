@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import EventCard from '@/components/EventCard.vue';
-import EventInfo from '@/components/EventInfo.vue'
 import Event from '@/types/Event';
 import { ref } from 'vue';
 const events = ref<Event[]>([
@@ -41,9 +40,10 @@ const events = ref<Event[]>([
 </script>
 
 <template>
+  <h1>Events For Good</h1>
+  <!-- Nnew element -->
   <div class="events">
     <EventCard v-for="event in events" :key="event.id" :event="event"/>
-    <EventInfo v-for="event in events" :key="event.id" :event="event"></EventInfo>
   </div>
 </template>
 

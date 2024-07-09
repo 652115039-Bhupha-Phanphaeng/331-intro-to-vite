@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { time } from 'console';
 import { ref } from 'vue'
 // defineProps<{
 //   msg: string
